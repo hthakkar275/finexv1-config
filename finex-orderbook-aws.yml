@@ -1,0 +1,14 @@
+spring:
+  applicaton:
+    name: finex-orderbook
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+server:
+  port: 8080
+
+remote:
+  services:
+    baseurl: ${services_base_url}
+    useNonStandardPort: false
+
